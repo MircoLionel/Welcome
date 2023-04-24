@@ -1,0 +1,175 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Vidaloka&display=swap');
+*{   
+    padding: 0%;
+    margin: 0%;
+}
+.navegador {
+    display:inline-flex;
+    background-color:blue;
+    justify-content :space-between;
+    align-items:center;
+    height: auto;
+    padding: 10px 10px;
+    position:sticky;
+    font-size:18px;
+    width: 100%;
+}
+.navegador .log a img:hover{
+    transform: scale(1.2);
+}
+.navegador .log a img {
+    height: 50px;
+    width: auto;
+    transition:all 0.5s;
+    position: relative;
+}
+.navegador .logo{
+    cursor: pointer;
+    color:bisque;
+}
+.navegador .nav-links li {
+    display: inline-flex;
+    padding: 10px;
+    font-size: 400;
+    text-transform: none;
+    list-style: none;
+}
+.navegador .nav-links li a {
+    color: white;
+    list-style: none;
+    text-decoration:none;
+    font-size: 700;
+    text-shadow: 3px 3px 7px #000,3px 3px 7px #000;
+}
+.navegador .nav-links li a:hover{
+    transition: all 0.5s 
+}
+.navegador .nav-links li a:hover {
+    color:orange;
+    transform: scale(1.1);
+}
+.navegador .btn button{
+    font-size:15px;
+    color: blue;
+    padding: 5px 12px;
+    background-color:gainsboro;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 3px 6px 10px #000;
+    cursor:pointer;
+    transition:all 0.5;
+}
+.navegador .btn button:hover{
+    background-color:blue;
+    color: white;
+    transform: scale(1.1);
+    transition: all 0.5s;
+} 
+.navegador .btn{
+    padding: 20px;
+    position: relative;
+} 
+body{
+    background-color: whitesmoke;  
+}
+h1 {
+    font-size: 4em;
+}
+footer{
+    display:inline-flex;
+    min-height: 3.5em;
+    width: 100%;
+    background-color:blue;
+    font-size: 20px;
+    position:fixed;
+    border:solid black 1px;
+    border-radius: 5px;
+    bottom: 0;
+    text-align: center;
+}
+footer ul li{
+    display:inline-flex;
+    padding: 10px 15px;
+    position:relative;
+}
+footer ul li a {
+    list-style-type: none;
+    text-decoration: none;
+    color: #000;
+    transition: all 0.5s;
+}
+footer ul li a:hover{
+    transform: scale(1.3);
+    color: orangered;
+    transition: all 0.5s;
+}
+footer img {
+    height: 50px;
+    width: auto;
+    transition:all 0.5s;
+    margin-right: 20px;
+}
+footer img:hover{
+    transform: scale(1.1);
+}
+.legajo{
+    position:absolute;
+    right:2%;
+    padding-inline: 3%;
+    bottom: 10px;
+    font-size:small;
+}
+.created{ color: gray;
+    font-size: 10px;
+    text-shadow: 1px 1px black;
+    bottom: 0%;
+    position:fixed;
+    margin:0% 45%;
+}
+.nav-responsive{
+    display: none;
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+    list-style-type: none;
+    box-sizing: border-box;
+
+}
+.nav-responsive li{
+    padding: 3px;
+    font-size:18px;
+}
+.nav-responsive li:hover{
+    color: orange;
+    transition: all 0.5s;
+    transform: scale(1.2);
+
+}
+.nav-responsive a {
+    color:black;
+    padding: 10px;
+    text-decoration: none;
+}
+.nav-links i {
+    padding: 5px;
+}
+.nav-links i:hover { transition: all 3s;
+    transform: scale(1.1);
+
+}
+.nav-links{
+    color: rgb(28, 28, 28);
+}
+
+@media only screen and (max-width:830px) {
+    .nav-links{
+        display: none;
+    }
+    .nav-responsive{
+        display: block;
+    }
+    .btn{
+        display:none;
+    }
+}
